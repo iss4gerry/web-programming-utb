@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Register Form</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="form-container">
+			<form class="centered-form">
+				<h2>Register Form</h2>
+
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName" required />
+
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName" required />
+
+				<label for="gender">Gender:</label>
+				<select id="gender" name="gender" required>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label for="age">Age:</label>
+				<input type="number" id="age" name="age" required />
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required />
+
+				<button type="submit">Register</button>
+			</form>
+		</div>
+
+		<!-- Tabel untuk menampilkan data pengguna yang telah terdaftar -->
+		<div class="table-container">
+			<table class="user-table">
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Gender</th>
+						<th>Age</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Gerry</td>
+						<td>Skalakasming</td>
+						<td>Male</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<td>Mayu</td>
+						<td>Skalakasming</td>
+						<td>Female</td>
+						<td>17</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
