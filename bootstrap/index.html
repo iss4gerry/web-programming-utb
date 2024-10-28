@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Register Form</title>
+
+		<link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container mt-5">
+			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-header text-center">
+							<h3>Register</h3>
+						</div>
+						<div class="card-body">
+							<form>
+								<div class="row mb-3">
+									<div class="col-md-6">
+										<label for="firstName" class="form-label">First Name</label>
+										<input
+											type="text"
+											class="form-control"
+											id="firstName"
+											placeholder="Enter your first name"
+											required
+										/>
+									</div>
+									<div class="col-md-6">
+										<label for="lastName" class="form-label">Last Name</label>
+										<input
+											type="text"
+											class="form-control"
+											id="lastName"
+											placeholder="Enter your last name"
+											required
+										/>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="email" class="form-label">Email</label>
+										<input
+											type="email"
+											class="form-control"
+											id="email"
+											placeholder="Enter your email"
+											required
+										/>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-md-6">
+										<label for="password" class="form-label">Password</label>
+										<input
+											type="password"
+											class="form-control"
+											id="password"
+											placeholder="Enter your password"
+											required
+										/>
+									</div>
+									<div class="col-md-6">
+										<label for="confirmPassword" class="form-label"
+											>Confirm Password</label
+										>
+										<input
+											type="password"
+											class="form-control"
+											id="confirmPassword"
+											placeholder="Confirm your password"
+											required
+										/>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary w-100">
+									Register
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
