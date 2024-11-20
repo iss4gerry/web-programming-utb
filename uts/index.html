@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OpenSea - Marketplace NFT</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img
+						src="assets/images/logo.png"
+						alt="OpenSea Logo"
+						width="40"
+						height="40"
+						class="d-inline-block align-top"
+					/>
+					OpenSea
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="login.html">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="register.html">Register</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container mt-5">
+			<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="assets/images/banner1.jpg"
+							class="d-block w-100"
+							alt="Banner 1"
+						/>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="assets/images/banner2.jpg"
+							class="d-block w-100"
+							alt="Banner 2"
+						/>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="assets/images/banner3.jpg"
+							class="d-block w-100"
+							alt="Banner 3"
+						/>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#bannerCarousel"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#bannerCarousel"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="container my-5">
+			<h2 class="text-center display-8 text-primary font-weight-bold">
+				Selamat Datang di OpenSea
+			</h2>
+			<p class="text-md mb-4 text-center">
+				OpenSea adalah salah satu pasar terbesar di dunia untuk NFT
+				(Non-Fungible Token), tempat di mana kreator, kolektor, dan pecinta
+				digital dapat membeli, menjual, dan menemukan aset digital unik. Dari
+				karya seni, collectibles, musik, hingga item dalam game, OpenSea
+				menawarkan beragam NFT dari seniman dan proyek di seluruh dunia.
+				Platform ini berjalan di atas blockchain Ethereum, menjamin setiap
+				transaksi dan kepemilikan NFT secara transparan dan aman.
+			</p>
+
+			<h3 class="mt-5">Kategori NFT:</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img
+							src="assets/images/artworks-category.jpg"
+							class="card-img-top"
+							alt="Artworks"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Artworks</h5>
+							<p class="card-text mb-3">
+								Jelajahi dunia seni digital dengan karya-karya menakjubkan dari
+								seniman terkenal. Temukan karya seni eksklusif dan unik hanya di
+								OpenSea.
+							</p>
+							<a href="artwork.html" class="btn btn-primary w-100"
+								>Selengkapnya</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img
+							src="assets/images/collectibles-category.jpg"
+							class="card-img-top"
+							alt="Collectibles"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Collectibles</h5>
+							<p class="card-text mb-3">
+								Koleksi item digital seperti avatar, item permainan, dan kartu
+								koleksi langka yang dapat Anda beli dan jual di pasar OpenSea.
+							</p>
+							<a href="collectibles.html" class="btn btn-primary w-100"
+								>Selengkapnya</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img
+							src="assets/images/music-category.jpg"
+							class="card-img-top"
+							alt="Music"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Music</h5>
+							<p class="card-text mb-3">
+								Temukan musik digital yang terdesentralisasi dan nikmati
+								pengalaman mendengarkan karya musik dari artis-artis kreatif.
+							</p>
+							<a href="music.html" class="btn btn-primary w-100"
+								>Selengkapnya</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bg-light text-center py-3">
+			&copy; Copyright by 22552011036_Gerry Desrian_TIF 22 CNS
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

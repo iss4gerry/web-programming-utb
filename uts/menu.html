@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Menu Utama - OpenSea</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<style>
+			.card:hover {
+				transform: scale(1.05);
+				transition: transform 0.3s ease;
+			}
+			.card-title {
+				color: #2c3e50;
+				font-weight: bold;
+			}
+			.card-text {
+				font-size: 0.9rem;
+				color: #6c757d;
+			}
+			.container {
+				max-width: 1200px;
+			}
+			body,
+			html {
+				height: 100%;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+			}
+			#main-content {
+				flex: 1;
+			}
+			footer {
+				background-color: #f8f9fa;
+				text-align: center;
+				padding: 1rem;
+			}
+		</style>
+	</head>
+	<body class="bg-light">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img
+						src="assets/images/logo.png"
+						alt="OpenSea Logo"
+						width="40"
+						height="40"
+						class="d-inline-block align-top"
+					/>
+					OpenSea
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="login.html"
+								id="logoutButton"
+								style="display: none"
+								>Logout</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container my-5">
+			<div class="text-center mb-5">
+				<h2 class="fw-bold">Selamat Datang di OpenSea</h2>
+				<p class="lead">
+					Temukan pengalaman terbaik dalam dunia NFT dengan fitur-fitur
+					unggulan!
+				</p>
+			</div>
+
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img
+							src="assets/images/profile.jpg"
+							class="card-img-top"
+							alt="Lihat Profile"
+							style="height: 220px; object-fit: cover"
+						/>
+						<div class="card-body text-center">
+							<h5 class="card-title">Lihat Profile</h5>
+							<p class="card-text">Lihat dan kelola informasi profile Anda.</p>
+							<a href="#" class="btn btn-primary">Akses Profile</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img
+							src="assets/images/koleksi.jpeg"
+							class="card-img-top"
+							alt="Koleksi NFT Saya"
+							style="height: 220px; object-fit: cover"
+						/>
+						<div class="card-body text-center">
+							<h5 class="card-title">Koleksi NFT</h5>
+							<p class="card-text">Lihat semua koleksi NFT pribadi Anda.</p>
+							<a href="#" class="btn btn-primary">Lihat Koleksi</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img
+							src="assets/images/populer.jpg	"
+							class="card-img-top"
+							alt="Eksplorasi NFT Populer"
+							style="height: 220px; object-fit: cover"
+						/>
+						<div class="card-body text-center">
+							<h5 class="card-title">Eksplorasi NFT Populer</h5>
+							<p class="card-text">
+								Jelajahi koleksi NFT yang paling populer dan diminati.
+							</p>
+							<a href="#" class="btn btn-primary">Eksplorasi Sekarang</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bg-light text-center py-3 mt-auto">
+			&copy; 2024 22552011036_Gerry Desrian - All Rights Reserved
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			if (!localStorage.getItem('loggedIn')) {
+				alert('Silahkan login terlebih dahulu');
+				window.location.href = 'login.html';
+			}
+
+			document.getElementById('logoutButton').style.display = 'block';
+
+			document
+				.getElementById('logoutButton')
+				.addEventListener('click', function () {
+					localStorage.removeItem('loggedIn');
+					window.location.href = 'login.html';
+				});
+		</script>
+	</body>
+</html>
